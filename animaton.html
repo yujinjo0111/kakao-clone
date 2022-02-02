@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+       <head>
+         <title>The Yujin Times</title> 
+           <meta chaset="utf-8"/>
+<style>
+bodY{
+    background-color: blue;
+display:flex;
+align-items: center;
+justify-content: center;
+position: relative;
+
+}
+.circle div{
+    background-color: white;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+}
+.circle{
+
+    position:absolute;
+    top:120px;
+    width:100px;
+    height:10px;
+    display:flex;
+    justify-content: space-between;
+    animation: spin 2s ease-in-out infinite;
+
+
+}
+@keyframes spin {
+    from{
+        transform:rotateZ(0);
+    }
+    to{
+        transform:rotateZ(180deg);
+
+    }
+    
+}
+
+.square {
+    width:80px;
+    height:50px;
+ 
+position: absolute;
+top:300px;
+display:flex;
+justify-content: space-between;
+
+}
+.square div{
+    background-color: white;
+height:50px;
+width:10px;
+animation: sizeup 1s infinite;
+
+}
+@keyframes sizeup {
+    0%{
+        transform: scaley(100%);
+
+    }
+    25%{
+        transform: scaleY(150%);
+
+    }
+    75%{
+        transform:scaleY(100%);
+
+    }
+    100%{
+    transform:scaleY(150%);
+    }
+
+
+    
+}
+.square div:first-child{
+animation-delay: 0.1s;
+
+}
+.square div:nth-child(2){
+    animation-delay:0.2s;
+
+}
+.square div:nth-child(3){
+    animation-delay:0.3s;
+}
+.square div:nth-child(4){
+    animation-delay:0.4s;
+
+}
+.square div:last-child{
+    animation-delay:0.5s;
+}
+
+
+
+
+</style>
+       </head>
+       <body>
+<div class="circle">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="square">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</div>
+    
+       </body>
+</html>
