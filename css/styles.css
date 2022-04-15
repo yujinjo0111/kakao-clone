@@ -17,7 +17,7 @@ body {
 .status-ba__column:last-child {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; /*가로중앙*/
 }
 .status-ba__column .fa-battery-full {
   margin: 0px 5px;
